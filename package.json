@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -38,9 +40,11 @@
     "marko": "^4.2.3",
     "pem": "^1.9.4",
     "promise-delay": "^2.1.0",
-    "socket.io": "^1.7.3",
+    "socket.io": "^2.0.2",
     "socketio-sticky-session": "git://github.com/wzrdtales/socket-io-sticky-session.git#2d0367fd7c80c727923f33d2ac11e34d0267ae4c",
     "spdy": "^3.4.4",
-    "thenify-all": "^1.6.0"
-  }
+    "thenify-all": "^1.6.0",
+    "snyk": "^1.113.0"
+  },
+  "snyk": true
 }
